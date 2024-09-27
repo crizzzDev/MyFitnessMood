@@ -1,0 +1,21 @@
+.dashboard {
+    display: flex;
+    width: 96%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: auto; /* Centra el elemento horizontalmente */
+    overflow: hidden; /* Evita que el contenido se salga del contenedor */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.dashboard img {
+    max-width: 90%; /* La imagen no excederá el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    border-radius: 5px;  /* Opcional: redondear los bordes de la imagen */
+}
