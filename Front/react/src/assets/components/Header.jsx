@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Importa Link
+import { Link } from 'react-router-dom';
 
 function Header({ onLoginClick }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -28,10 +28,10 @@ function Header({ onLoginClick }) {
             ></ion-icon>
           </li>
           <li className="text-nav">
-            <Link to="/">Inicio</Link> {/* Enlace a Inicio */}
+            <Link to="/">Inicio</Link>
           </li>
           <li className="text-nav">
-            <Link to="/contacto">Contacto</Link> {/* Enlace a Contacto */}
+            <Link to="/contacto">Contacto</Link>
           </li>
           <li>
             <button className="btnLogin-popup" onClick={onLoginClick}>
@@ -41,10 +41,10 @@ function Header({ onLoginClick }) {
         </ul>
         <ul className="bar">
           <li className="hideOnMobile text-nav">
-            <Link to="/">Inicio</Link> {/* Enlace a Inicio */}
+            <Link to="/">Inicio</Link>
           </li>
           <li className="hideOnMobile text-nav">
-            <Link to="/contacto">Contacto</Link> {/* Enlace a Contacto */}
+            <Link to="/contacto">Contacto</Link>
           </li>
           <li className="hideOnMobile">
             <button className="btnLogin-popup" onClick={onLoginClick}>

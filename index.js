@@ -12,7 +12,7 @@ app.use(express.json()); // Para parsear JSON en el cuerpo de las solicitudes
 app.get('/', (req, res) => res.send("¡My Fitness Mood funciona!"));
 
 // Ruta para iniciar sesión
-app.post('/login', async (req, res) => {
+app.post('/loggedIn', async (req, res) => {
     const { email, password } = req.body;
 
     try {
