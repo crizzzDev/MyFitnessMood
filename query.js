@@ -1,4 +1,5 @@
 // este documento facilita las pruebas, consultas  y mantiene la estructura del código organizada
+import mongoose, { ObjectId } from 'mongoose'; // Asegúrate de importar ObjectId
 import { User } from './db.js'; // Importa el modelo de usuario desde db.js
 
 // Función para consultar un usuario por email y contraseña
