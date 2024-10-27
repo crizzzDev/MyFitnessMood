@@ -1,10 +1,9 @@
-// db.js
 import mongoose from 'mongoose';  // Importa Mongoose para trabajar con MongoDB
 
-// Conectar a MongoDB usando la URI de la base de datos
-const mongoURI = 'mongodb://localhost:27017/users';
+// Conectar a MongoDB usando la URI de la base de datos de MongoDB Atlas
+const mongoURI = 'mongodb+srv://crizzz:crizzz123@senanosql.x6wsqbw.mongodb.net/MyFitnessMood?retryWrites=true&w=majority';  // Cambia esto a tu URI de Atlas
 mongoose.connect(mongoURI)
-  .then(() => console.log('Conectado a MongoDB'))  // Mensaje si la conexión es exitosa
+  .then(() => console.log('Conectado a MongoDB Atlas'))  // Mensaje si la conexión es exitosa
   .catch(err => console.error('Error de conexión a MongoDB:', err));  // Mensaje si hay un error
 
 // Definición del esquema de usuarios basado en los datos de la colección "loginInfo"
@@ -12,7 +11,7 @@ const usersInfoSchema = new mongoose.Schema({
   name: { type: String, required: true },  // Campo 'name', tipo String, obligatorio
   email: { type: String, required: true }, // Campo 'email', tipo String, obligatorio
   password: { type: String, required: true }  // Campo 'password', tipo String, obligatorio
-}, { collection: 'loginInfo' });  // Especifica que Mongoose use la colección 'loginInfo'
+}, { collection: 'Users' });  // Especifica que Mongoose use la colección 'Users'
 
 // Crear el modelo de usuario basado en el esquema definido
 const User = mongoose.model('User', usersInfoSchema);

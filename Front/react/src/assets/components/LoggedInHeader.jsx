@@ -34,7 +34,7 @@ const LoggedInHeader = () => {
     <header className="header">
       <div className="logo">
         <img src="RecursosGraficos/IconoM.png" alt="MyFitnessMood Logo" />
-      </div>
+      </div>¹
       <nav className="nav">
         <ul className={`side-bar ${isSidebarVisible ? 'show' : ''}`}>
           <li>
